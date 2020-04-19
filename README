@@ -1,0 +1,14 @@
+插件化
+
+1、插件化好处：
+    业务组件解耦，能够实现业务组件热插拔
+    更改产品迭代模式，可分为主app以及次业务app
+    改善产品更新过程，可以在不影响用户的情况下实现业务组件更新以及bug修复
+
+2、主app、业务app都需要依赖插件化lib
+
+3、业务app中activity需继承lib的 BasePluginActivity(基类)
+
+4、主app跳转到业务app需借助中间代理类 ProxyPluginActivity，并将目标activity路径传入
+
+

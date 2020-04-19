@@ -1,0 +1,2 @@
+include ':app', ':pluginlib'
+rootProject.name='ZPluginLib'
