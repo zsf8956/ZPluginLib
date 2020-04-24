@@ -2,6 +2,7 @@ package com.zsf.pluginlib.base;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.zsf.pluginlib.IPlugin;
 
@@ -34,7 +35,15 @@ public class BasePluginActivity extends Activity implements IPlugin {
         }else{
             mProxyActivity.setContentView(layoutId);
         }
+    }
 
+    @Override
+    public void setContentView(View view) {
+        if (mFrom == FROM_INTERNAL){
+            super.setContentView(view);
+        }else{
+            mProxyActivity.setContentView(view);
+        }
     }
 
     @Override
