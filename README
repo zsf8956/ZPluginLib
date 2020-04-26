@@ -12,3 +12,7 @@
 4、主app跳转到业务app需借助中间代理类 ProxyPluginActivity，并将目标activity路径传入
 
 
+包含的第三方依赖
+    butter knife
+
+
