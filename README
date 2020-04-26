@@ -14,5 +14,10 @@
 
 包含的第三方依赖
     butter knife
+    注意：引入的各module需在gradle--android 添加
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
 
